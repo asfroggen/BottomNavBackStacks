@@ -3,11 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_nav_graph"
-    app:startDestination="@id/firstFragment">
+    app:startDestination="@id/first_nav_graph">
 
-    <fragment
-        android:id="@+id/firstFragment"
-        android:name="com.esaudev.bottomnavbackstacks.FirstFragment"
-        android:label="fragment_first"
-        tools:layout="@layout/fragment_first" />
+    <include app:graph = "@navigation/first_nav_graph"/>
+    <include app:graph = "@navigation/second_nav_graph"/>
 </navigation>
