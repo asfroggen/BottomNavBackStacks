@@ -18,5 +18,14 @@
         android:id="@+id/navigationFragment"
         android:name="com.esaudev.bottomnavbackstacks.NavigationFragment"
         android:label="fragment_navigation"
-        tools:layout="@layout/fragment_navigation" />
+        tools:layout="@layout/fragment_navigation" >
+        <action
+            android:id="@+id/action_navigationFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.esaudev.bottomnavbackstacks.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" />
 </navigation>

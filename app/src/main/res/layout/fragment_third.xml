@@ -3,13 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".NavigationFragment">
+    tools:context=".ThirdFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:id="@+id/tvTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Otro fragmento random jeje saludos" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
 
 </FrameLayout>

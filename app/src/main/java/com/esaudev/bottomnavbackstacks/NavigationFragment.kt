@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import com.esaudev.bottomnavbackstacks.databinding.FragmentFirstBinding
 import com.esaudev.bottomnavbackstacks.databinding.FragmentNavigationBinding
 
@@ -20,6 +21,11 @@ class NavigationFragment : Fragment() {
     ): View {
         // Inflate the layout for this fragment
         _binding = FragmentNavigationBinding.inflate(inflater, container, false)
+
+        binding.tvTest.setOnClickListener {
+            findNavController().navigate(R.id.action_navigationFragment_to_thirdFragment)
+        }
+
         return binding.root
     }
 }
