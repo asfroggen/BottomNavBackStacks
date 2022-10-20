@@ -6,13 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fMain"
         android:layout_width="0dp"
         android:layout_height="0dp"
 
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        app:navGraph="@navigation/main_nav_graph"
         app:defaultNavHost="true"
 
         app:layout_constraintTop_toTopOf="parent"
